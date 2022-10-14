@@ -1,5 +1,7 @@
 package com.safv.SAFV.Models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -35,6 +37,7 @@ public class Funcionario {
     private String emailCorporativo;
     private String emailParticular;
     
+   
 
 
 	public Integer getMatricula() {

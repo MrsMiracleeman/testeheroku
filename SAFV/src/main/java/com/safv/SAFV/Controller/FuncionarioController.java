@@ -1,5 +1,6 @@
 package com.safv.SAFV.Controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,15 +26,24 @@ public class FuncionarioController {
 	@Autowired
 	FuncionarioService service;
 	
-	@GetMapping()
-	public List <Funcionario> getFuncionarios(Integer matricula) {
-	
-		if(matricula == null) {
-			return service.findAll();
-		}else {
-			return service.findByMatricula(matricula);
-		}
+//	@GetMapping()
+//	public List <Funcionario> getFuncionarios(Integer matricula) {
+//	
+//		if(matricula == null) {
+//			return service.findAll();
+//		}else {
+//			return service.findByMatricula(matricula);
+//		}
+//		
+//	}
+	@GetMapping
+	public List <Funcionario> get() {
 		
+		List minha = new ArrayList <Funcionario> ();
+		
+		minha = service.findAll();
+		
+		return minha;
 	}
 	
 	@GetMapping("/{cpf}")

@@ -22,7 +22,7 @@ public class Veiculo {
 	    private String modelo;
 	    @ManyToOne
 	    private Motorista motorista;
-	    @JoinColumn(name = "motorista_cnh")
+//	    @JoinColumn(name = "motorista_cnh")
 	  
 
 

@@ -9,6 +9,7 @@ public class FuncionarioDTO {
 	private Setor setor;
 	private String nome;
 	private String sobrenome;
+	private String teste;
 	
 	
 	public Funcao getFuncao() {
